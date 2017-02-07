@@ -11,7 +11,7 @@ namespace Family
     {
         public FamilyPage()
         {
-            Padding = new Thickness(5, Device.OnPlatform(20, 5, 5), 5, 5);
+            Padding = new Thickness(5, Device.OnPlatform(20, 5, 5), 20, 20);
             Color textColor = new Color(255, 0, 0);
             double fontsize = Device.GetNamedSize(NamedSize.Medium, typeof(Label));
             double namesize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
@@ -29,7 +29,7 @@ namespace Family
                     },
                     new Label
                     {
-                        Text = " - Dad\n\n\n\n",
+                        Text = " - Dad\n\n Soft spoken, hard worker\n\n",
                         TextColor = textColor,
                         FontSize = fontsize
                     },
@@ -42,7 +42,7 @@ namespace Family
                     },
                     new Label
                     {
-                        Text = " - Mom\n\n\n\n",
+                        Text = " - Mom\n\n Very outspoken, sociable, also a hard worker, bubbly.\n\n",
                         TextColor = textColor,
                         FontSize = fontsize
                     },
@@ -55,7 +55,7 @@ namespace Family
                     },
                     new Label
                     {
-                        Text = " - Sister\n\n\n\n",
+                        Text = " - Sister\n\n More soft spoken than outgoing, but more outgoing than dad. In Law school\n\n",
                         TextColor = textColor,
                         FontSize = fontsize
                     },
@@ -68,7 +68,7 @@ namespace Family
                     },
                     new Label
                     {
-                        Text = " - Cousin\n\n\n\n",
+                        Text = " - Cousin\n\n Loud, used to be much louder, lives in Chicago.\n\n",
                         TextColor = textColor,
                         FontSize = fontsize
                     },
@@ -81,7 +81,7 @@ namespace Family
                     },
                     new Label
                     {
-                        Text = " - Cousin\n\n\n\n",
+                        Text = " - Cousin\n\n Living at home, used to be loud, pretty quiet now, introspective.\n\n",
                         TextColor = textColor,
                         FontSize = fontsize
                     },
@@ -90,26 +90,33 @@ namespace Family
                         Text = "Scott Amundsen\n\n",
                         FontAttributes = FontAttributes.Bold,
                         FontSize = namesize,
-                        TextColor = Color.Black
+                        TextColor = Color.Black,
+                        VerticalOptions = LayoutOptions.FillAndExpand,
+                        HorizontalOptions = LayoutOptions.FillAndExpand,
+                        BackgroundColor = Color.Gray
                     },
                     new Label
                     {
-                        Text = " - Uncle\n\n\n\n",
+                        Text = " - Uncle\n\n Loud. Has been and still is a mechanic. Has a car lift in the poll barn\n\n",
                         TextColor = textColor,
-                        FontSize = fontsize
+                        FontSize = fontsize,
+                        BackgroundColor = Color.Yellow
                     },
                     new Label
                     {
                         Text = "Judy Amundsen\n\n",
                         FontAttributes = FontAttributes.Bold,
                         FontSize = namesize,
-                        TextColor = Color.Fuchsia
+                        TextColor = Color.Fuchsia,
+                        BackgroundColor = Color.Gray
                     },
                     new Label
                     {
-                        Text = " - Aunt\n\n\n\n",
+                        Text = " - Aunt\n\n Similarly loud. Went to Hennepin tech a few years ago in the dental program.\n\n",
                         TextColor = textColor,
-                        FontSize = fontsize
+                        FontSize = fontsize,
+                        BackgroundColor = Color.Yellow,
+                        VerticalOptions = LayoutOptions.EndAndExpand
                     }
                 }
                 
